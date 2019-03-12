@@ -19,6 +19,7 @@
 **[在线预览 &rarr;](https://filehole.github.io)**
 
 ![screenshot home](https://filehole.github.io/assets/images/screenshots/home.png)
+![New OAuth App](https://filehole.github.io/assets/images/readme/create-new-OAuth-App.png)
 
 ## Fork 指南
 
