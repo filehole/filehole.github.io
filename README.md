@@ -26,7 +26,7 @@ Fork 本项目可以轻松地建立你自己的 git blog，当然还需要做一
 
 1. 设置正确的项目名称与分支。
 
-   按照 GitHub Pages 的规定，名称为 `username.github.io` 的项目的 master 分支，或者其它名称的项目的 gh-pages 分支可以自动生成 GitHub Pages 页面，例如本项目即为 filehole/filehole.github.io，对应的地址为 https://filehole.github.io。
+   按照 GitHub Pages 的规定，名称为 `username.github.io` 的项目的 master 分支，或者其它名称的项目的 gh-pages 分支可以自动生成 GitHub Pages 页面，例如本项目即为 `filehole/filehole.github.io`，对应的地址为 https://filehole.github.io。
 
 2. 修改域名。
 
@@ -39,12 +39,13 @@ Fork 本项目可以轻松地建立你自己的 git blog，当然还需要做一
    **评论模块：** 目前支持 disqus、gitment 和 gitalk，选用其中一种就可以了，推荐使用 gitalk。它们各自的配置指南链接在 \_config.yml 文件的 Comments 一节里都贴出来了。
 
    *gitalk* 创建流程
-   >- 进入 Settings -> Developer settings -> OAuth Apps
-   >- 创建新的应用 New OAuth App
-   ![screenshot home](https://filehole.github.io/assets/images/readme/creat new OAuth App.png)
-   >- 获取创建好的应用的参数，最重要的即 Client ID 与 Client Secret
-   >- 在 github 中创建留存对应评论的仓库，例如 blog-comments
-   >- 修改 _config.yml 文件中的代码段
+   * 进入 Settings -> Developer settings -> OAuth Apps
+   * 创建新的应用 New OAuth App
+   ![screenshot](https://filehole.github.io/assets/images/readme/creat-new-OAuth-App.png)
+   * 获取创建好的应用的参数，最重要的即 Client ID 与 Client Secret
+   * 在 github 中创建留存对应评论的仓库，例如 blog-comments
+   * 修改 \_config.yml 文件中的代码段
+
    ```
    gitalk:
     owner: filehole
