@@ -2,13 +2,13 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://mazhuang.org
+url: https://filehole.github.io
 date_format: "ordinal"
-title: 码志
-subtitle: "打码改变人生"
-description: "马壮的个人博客"
-keywords: 码志, Zhuang Ma, mzlogin, mazhuang
-timezone: Asia/Shanghai
+title: filehole
+subtitle: "everything is OK"
+description: "Falling in Love with Mars"
+keywords: 读书，历史，单机游戏
+timezone: Asia/Beijing
 encoding: "utf-8"
 side_bar_repo_limit: 5
 
@@ -18,9 +18,9 @@ side_bar_repo_limit: 5
 author: Zhuang Ma
 organization: 
 organization_url: 
-github_username: mzlogin
-location: Wuhan, China
-email: chumpma@gmail.com
+github_username: filehole
+location: Beijing, China
+email: yany3385@gmail.com
 
 # ---------------- #
 #    Navigation    #
