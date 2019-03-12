@@ -40,7 +40,7 @@ Fork 本项目可以轻松地建立你自己的 git blog，当然还需要做一
 
    *gitalk* 创建流程
    >- 进入 Settings -> Developer settings -> OAuth Apps
-   >- 创建新的应用 New OAuth App ![New OAuth App](https://filehole.github.io/assets/images/readme/creat-new-OAuth-App.png)
+   >- 创建新的应用 New OAuth App ![New OAuth App](https://filehole.github.io/assets/images/readme/create-new-OAuth-App.png)
    >- 获取创建好的应用的参数，最重要的即 Client ID 与 Client Secret
    >- 在 github 中创建留存对应评论的仓库，例如 blog-comments
    >- 修改 \_config.yml 文件中的代码段
