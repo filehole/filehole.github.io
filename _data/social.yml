@@ -1,27 +1,28 @@
 - sitename: GitHub
-  name: mzlogin
-  url: https://github.com/mzlogin
-
-- sitename: 掘金
-  name: mzlogin
-  url: http://gold.xitu.io/user/570ddaeb2e958a005c63b2da
-
-- sitename: LinkedIn
-  name: mazhuang
-  url: https://www.linkedin.com/in/mazhuang
+  name: filehole
+  url: https://github.com/filehole/
 
 - sitename: 博客
-  name: 码志
-  url: http://mazhuang.org
-
-- sitename: 微博
-  name: mzlogin
-  url: http://weibo.com/mzlogin
-
-- sitename: 知乎
-  name: mzlogin
-  url: http://www.zhihu.com/people/mzlogin
+  name: 文件洞
+  url: https://filehole.github.io/
 
 - sitename: 豆瓣
-  name: 壮哥不胖
-  url: http://www.douban.com/people/freedim
+  name: 严小言要努力
+  url: https://www.douban.com/people/163628863/
+
+- sitename: 微博
+  name: filehole
+  url: https://www.weibo.com/p/1005051068278504/home/
+
+- sitename: 知乎
+  name: 小言
+  url: https://www.zhihu.com/people/xiao-yan-76-29/
+
+- sitename: 脉脉
+  name: 严言
+  url: https://maimai.cn/contact/detail/3086982/
+
+- sitename: LinkedIn
+  name: Yan Yan
+  url: https://www.linkedin.com/in/yan-yan-92a07969/
+
