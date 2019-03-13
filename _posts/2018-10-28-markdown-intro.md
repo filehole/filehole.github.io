@@ -350,14 +350,14 @@ Markdown 支持行内式链接和引用式链接。
 
 **Markdown 语法：**
 
-Python 里使用 `requests` 包的 `requests.get()` 方法来获取返回数据。
+    Python 里使用 `requests` 包的 `requests.get()` 方法来获取返回数据。
 
-```python
-import requests
-from bs4 import BeautifulSoup
-html = requests.get(current_url)
-soup = BeautifulSoup(html.text, 'html.parser')
-```
+    ```python
+    import requests
+    from bs4 import BeautifulSoup
+    html = requests.get(current_url)
+    soup = BeautifulSoup(html.text, 'html.parser')
+    ```
 
 **预览效果：**
 
