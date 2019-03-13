@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 技术可能不能改变世界，但可以改变我
+keywords: 文件洞, filehole
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+严小言要努力。
 
-仰慕「优雅编码的艺术」。
+仰慕「优雅的艺术」，包含打码。
 
-坚信熟能生巧，努力改变人生。
+技术可能不能改变世界，但可以改变我。
 
 ## 联系
 
