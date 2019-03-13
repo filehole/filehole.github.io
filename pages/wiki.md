@@ -9,7 +9,7 @@ permalink: /wiki/
 ---
 
 > 快速命令与速查
-
+>
 > PS：记多少命令和快捷键会让脑袋爆炸呢？
 
 <ul class="listing">
