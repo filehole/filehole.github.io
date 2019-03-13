@@ -19,10 +19,10 @@ layout: default
             <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
           </span>
           {% endfor %}
-          {% for keyword in page.keywords %}
+          {% for key in page.keywords %}
           <span class="meta-info">
             <span class="octicon octicon-tag"></span>
-            <a title="{{ keyword }}">{{ keyword }}</a>
+            <a title="{{ key }}">{{ key }}</a>
           </span>
           {% endfor %}
         </div>
