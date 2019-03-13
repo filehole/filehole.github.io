@@ -373,27 +373,32 @@ soup = BeautifulSoup(html.text, 'html.parser')
 **对应 HTML：**
 
 ```html
-<p>Python 里使用 <code>requests</code> 包的 <code>requests.get()</code> 方法来获取返回数据。</p>
 
-<div class="highlight highlight-source-python">
-  <pre>
-    <span class="pl-k">import</span> 
-    (<span class="pl-smi">TextUtils</span>
-    <span class="pl-k">.</span>isEmpty(text)) {
-    <span class="pl-k">return</span> <span class="pl-c1">null</span>;}
-  </pre>
+<p>Python 里使用 <code class="highlighter-rouge">requests</code> 包的 <code class="highlighter-rouge">requests.get()</code> 方法来获取返回数据。</p>
+
+<div class="language-python highlighter-rouge">
+  <div class="highlight">
+    <pre class="highlight">
+      <code>
+        <span class="kn">import</span> <span class="nn">requests</span>
+        <span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+        <span class="n">html</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">current_url</span><span class="p">)</span>
+        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">html</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="s">'html.parser'</span><span class="p">)</span>
+      </code>
+    </pre>
+  </div>
 </div>
 ```
 
-上例中的语言标记 `java` 可选填，可用于在编辑器和渲染后的效果里添加语法高亮。
+上例中的语言标记 `python` 为可选填，用于在编辑器和渲染后的效果里添加语法高亮。
 
-块式代码也可以对整个代码段缩进四个空格，或一个 Tab 来实现。
+块式代码也可以通过对整个代码段缩进四个空格，或一个 Tab 来实现。
 
 ### 水平分割线
 
-使用一个单独行里的三个或以上 `*`、`-` 来生产一条水平分割线，它们之间可以有空格。
+一行里的三个或以上 `*`、`-` 来产生一条水平分割线，之间可以有空格。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
 ***
@@ -429,23 +434,27 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 
 ## 扩展语法
 
-本节的内容是介绍一些受到广泛支持的 Markdown 扩展语法。
+本节的内容是介绍一些目前已经广泛支持的 Markdown 扩展语法。
 
 ### 表格
 
-**Markdown：**
+**Markdown 语法：**
 
-    | 编号  | 姓名（左） | 年龄（右） | 性别（中） |
+    | 级别  | 姓名（左对齐） | 组织（右对齐） | 技能（居中） |
     | ----- | :--------  | ---------: | :------:   |
-    | 0     | 张三       | 28         | 男         |
-    | 1     | 李四       | 29         | 男         |
+    | 上忍     | 旗木卡卡西       | 火之国木叶         | 雷切         |
+    | 影     | 宇智波鼬       | 晓         | 天照         |
+    | 影     | 大蛇丸       | 音忍村         | 禁术·秽土转生         |
+    | 下忍     | 漩涡鸣人       | 火之国木叶         | 多重影分身         |
 
 **预览效果：**
 
-| 编号  | 姓名（左） | 年龄（右） | 性别（中） |
+| 级别  | 姓名（左对齐） | 组织（右对齐） | 技能（居中） |
 | ----- | :--------  | ---------: | :------:   |
-| 0     | 张三       | 28         | 男         |
-| 1     | 李四       | 29         | 男         |
+| 上忍     | 旗木卡卡西       | 火之国木叶         | 雷切         |
+| 影     | 宇智波鼬       | 晓         | 天照         |
+| 影     | 大蛇丸       | 音忍村         | 禁术·秽土转生         |
+| 下忍     | 漩涡鸣人       | 火之国木叶         | 多重影分身         |
 
 **对应 HTML：**
 
@@ -453,24 +462,36 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 <table>
   <thead>
     <tr>
-      <th>编号</th>
-      <th align="left">姓名（左）</th>
-      <th align="right">年龄（右）</th>
-      <th align="center">性别（中）</th>
+      <th>级别</th>
+      <th align="left">姓名（左对齐）</th>
+      <th align="right">组织（右对齐）</th>
+      <th align="center">技能（居中）</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>0</td>
-      <td align="left">张三</td>
-      <td align="right">28</td>
-      <td align="center">男</td>
+      <td>上忍</td>
+      <td align="left">旗木卡卡西</td>
+      <td align="right">火之国木叶</td>
+      <td align="center">雷切</td>
     </tr>
     <tr>
-      <td>1</td>
-      <td align="left">李四</td>
-      <td align="right">29</td>
-      <td align="center">男</td>
+      <td>影</td>
+      <td align="left">宇智波鼬</td>
+      <td align="right">晓</td>
+      <td align="center">天照</td>
+    </tr>
+    <tr>
+      <td>影</td>
+      <td align="left">大蛇丸</td>
+      <td align="right">音忍村</td>
+      <td align="center">禁术·秽土转生</td>
+    </tr>
+    <tr>
+      <td>下忍</td>
+      <td align="left">漩涡鸣人</td>
+      <td align="right">火之国木叶</td>
+      <td align="center">多重影分身</td>
     </tr>
   </tbody>
 </table>
@@ -478,39 +499,35 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 
 ### 任务列表
 
-在 GitHub / GitLab 里有较好的支持。
+任务在 GitHub / GitLab 里有了较好的支持。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-- [x] 洗碗
-- [ ] 清洗油烟机
-- [ ] 拖地
+- [x] 占据荆襄
+- [ ] 夺取西川和汉中
+- [ ] 待天下有变
 ```
 
 **预览效果：**
 
-- [x] 洗碗
-- [ ] 清洗油烟机
-- [ ] 拖地
+- [x] 占据荆襄
+- [ ] 夺取西川和汉中
+- [ ] 待天下有变
 
 **对应 HTML：**
 
 ```html
 <ul class="contains-task-list">
-  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> 洗碗</li>
-  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 清洗油烟机</li>
-  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 拖地</li>
+  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> 占据荆襄</li>
+  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 夺取西川和汉中</li>
+  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 待天下有变</li>
 </ul>
 ```
 
-如果是在 GitHub / GitLab 的 Issue 里，会附赠任务完成比例提示效果：
+如果是在 GitHub / GitLab 的 Issue 里，还可以直接在网页上拖动调整顺序，勾选和取消勾选：
 
-![task list 1](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/task-list-1.png)
-
-还可以直接在网页上拖动调整顺序，勾选和取消勾选。
-
-![task list 2](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/task-list-2.png)
+![task list 1](https://filehole.github.io/images/posts/markdown/issue-markdown.png)
 
 ### 删除线
 
