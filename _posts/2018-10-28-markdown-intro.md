@@ -1,26 +1,24 @@
 ---
 layout: post
-title: 一份简明的 Markdown 笔记与教程
+title: Markdown 笔记与教程
 categories: Markdown
-description: 一份简明的 Markdown 笔记与教程
-keywords: Markdown, VSCode
+description: 快速学习 Markdown 语法
+keywords: Markdown, 入门
 ---
 
-为部门内知识分享准备的素材，记录了 Markdown 的优点、应用场景和编辑工具，介绍了标准语法与扩展语法，以及一些应用 Markdown 的奇技淫巧。个人使用 Markdown 的经验持续补充中，最新完整版请参见
-
-<https://github.com/mzlogin/markdown-intro>
+本博客建设在 `github.io` 上，相关页面都是基于 Markdown 语法描述，所以这里也分享下关于 Markdown 的基本语法与常用技巧，后续会不定期更新，持续补充些个人经验。
 
 ---
 
-自从 2014 年左右接触到 Markdown 以来，对它的使用就一发而不可收拾。从最开始使用它在 GitHub Pages 里写博客，到用它编辑项目的 README 文件，再到撰写开发文档，编辑微信公众号文章和邮件内容等等，这期间也见证了它在各类平台和网站上的普及和被原生支持，可以说，Markdown 如今已经渗透了我在技术和网络活动的方方面面，成为了我撰写文本文档的首选。
+我大概是在2015年左右接触到 Markdown 的，当时受够了纸质版笔记本总是扔在不同的地方，想用的时候又常常不能接着上回使用的地方，往往只能换个新的，回顾信息也不是很方便；而「有道云笔记」与『印象笔记」调整格式又不是很方便，当然这两款工具我也一直在使用，不过是使用场景不同罢了。调研了当时很多的工具，最终选取了 Markdown，本地使用的软件是 `Cmd Markdown`。最主要的原因就是好学，快速上手，如果只是简单使用的话可以 10 分钟内了解基本语法，同时搭配各类工具和网站的集成，也可以轻松支持如文档分享，多人协作等功能。
+这是我自己本地的 Markdown 截图，基本每日工作记录，复盘与脑洞，以及个人学习记录，游戏心得等都可以通过它记录的。
+![](/images/posts/markdown/cmd-markdown.png)
 
-那么首先我们一起来看一下它的「定义」：
+关于 Markdown 的「定义」：
 
-> Markdown 是一种轻量级标记语言，创始人为 John Gruber。它允许人们「使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者 HTML）文档」。——维基百科
-
-本文档的目的不在于面面俱到地介绍 Markdown，只是作为我对其理解的笔记整理，希望能同时帮助一些对 Markdown 感兴趣的人快速上手，或是作为一个工具，供对其已经有所了解的人在需要时参考。
-
-接下来请随我一起深入了解这门并不神秘的实用标记语言。
+> Markdown 是一种轻量级标记语言，创始人为 John Gruber。
+> 它允许人们「使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者 HTML）文档」。
+>                                              ————维基百科
 
 **目录**
 
@@ -29,33 +27,33 @@ keywords: Markdown, VSCode
 
 ## 背景
 
-### 优点
+### 特点
 
-1. 专注于文字内容；
+1. 快速上手，语法简单，同时满足基础的排版需求，符合直男审美。
 
-2. 纯文本，易读易写，可以方便地纳入版本控制；
+2. 纯文本，易于管理与版本控制，可以轻松看到预览环境，方便调试。
 
-3. 语法简单，没有什么学习成本，能轻松在码字的同时做出美观大方的排版。
+3. 可以更专注于文字与内容本身，周边再也不会有什么「小短裙8折」之类的小广告。
 
 ### 使用场景
 
 * 各类代码托管平台
 
-    主流的代码托管平台，如 GitHub、GitLab、BitBucket、Coding、Gitee 等等，都支持 Markdown 语法，很多开源项目的 README、开发文档、帮助文档、Wiki 等都用 Markdown 写作。
+    主流的代码托管平台，如 GitHub、GitLab、BitBucket、Coding、Gitee 等，都已经支持 Markdown 语法；很多开源项目的 README、开发文档、帮助文档、Wiki 等也都是用 Markdown 编写的。
 
-* 技术社区和写作平台
+* 技术社区、写作平台、论坛
 
-    StackOverflow、CSDN、掘金、简书、GitBook、有道云笔记
+    StackOverflow、CSDN、掘金、简书、GitBook、有道云笔记等，大量资源分享型网站也都支持。
 
-* 论坛
+* 个人使用
 
-    V2EX、光谷社区
+    比如我就在本地完成每日工作记录与规划，大事记，to-do list等。
 
-个人感觉比较遗憾的一点是各平台可能采用不同语言实现的 Markdown 解析引擎，或采用同一解析引擎的不同版本，而且可能有不同程度的定制与扩展，这导致在不同平台上使用 Markdown 写作时体验并不完全一致。不过幸好对于大家公认的一些标准语法，各家都是支持的。
+当然就像 Android 系统一样，各家平台可能采用不同语言实现 Markdown 解析引擎，也经常存在不同程度的定制与扩展，这导致同一种写法在不同平台上体验并不完全一致。对于「强迫症患者」就经常花很长时间来调试排版，不过幸好已经形成一些公认的标准语法。
 
 ### 编辑工具
 
-理论上任何一款文本编辑器都能用于编辑 Markdown 文档，它们分别提供了不同程度的语法高亮、预览等功能，以下只是列举其中一部分，选择自己称手的即可。
+理论上任何一款文本编辑器都能用于编辑 Markdown 文档，还是看个人喜好与习惯吧，个人经验是熟练度的加成可以完爆所有工具上功能点的不完善，只不过上手度往往觉得很多人的熟练度加成。
 
 * 现代编辑器
 
@@ -75,13 +73,13 @@ keywords: Markdown, VSCode
 
 * 在线编辑器
 
-    各种支持 Markdown 的网站都提供了在线编辑器
+    各种支持 Markdown 的网站都提供了在线编辑器，在这里安利下 [Prose](https://prose.io/) 可以在线预览 github 上的 `.md` 文件，十分好用
 
-## 语法
+## 基本语法
 
 ### 标题
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
 # atx-style 一级标题
@@ -129,44 +127,44 @@ Setext-style 一级标题
 
 中间没有空行的连续不断的几行文字被视为一个段落。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-白日依山尽，
+美人卷珠帘，
 
-黄河入海流。
+深坐颦蛾眉。
 （句号后面没空格）
 
-欲穷千里目，
+但见泪痕湿，
 
-更上一层楼。  
+不知心恨谁。  
 （句号后面有俩空格）
 ```
 
 **预览效果：**
 
-白日依山尽，
+美人卷珠帘，
 
-黄河入海流。
+深坐颦蛾眉。
 （句号后面没空格）
 
-欲穷千里目，
+但见泪痕湿，
 
-更上一层楼。  
+不知心恨谁。  
 （句号后面有俩空格）
 
 **对应 HTML：**
 
 ```html
-<p>白日依山尽，</p>
+<p>美人卷珠帘，</p>
 
-<p>黄河入海流。
+<p>深坐颦蛾眉。
 （句号后面没有空格）</p>
 
-<p>欲穷千里目，</p>
+<p>但见泪痕湿，</p>
 
 <p>
-  更上一层楼。
+  不知心恨谁。
   <br>
   （句号后面有俩空格）
 </p>
@@ -176,66 +174,66 @@ Setext-style 一级标题
 
 对段落或者部分文本的强调效果。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-后面俩字**加黑**
+选中部分**加黑**
 
-后面俩字*斜体*
+选中部分*斜体*
 ```
 
 **预览效果：**
 
-后面俩字**加黑**
+选中部分**加黑**
 
-后面俩字*斜体*
+选中部分*斜体*
 
 **对应 HTML：**
 
 ```html
 <p>
-  后面俩字
+  选中部分
   <strong>加黑</strong>
 </p>
 <p>
-  后面俩字
+  选中部分
   <em>斜体</em>
 </p>
 ```
 
 ### 引用块
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-> 引用块段落一。
+> 引用块 段落一
 >
-> 引用块段落二。
->> 内嵌引用块段落一。
+> 引用块 段落二
+>> 引用块 段落二 内嵌引用块
 >
-> ### 引用块内的标题
+> ### 引用块 标题
 ```
 
 **预览效果：**
 
-> 引用块段落一。
+> 引用块 段落一
 >
-> 引用块段落二。
+> 引用块 段落二
 >
-> > 内嵌引用块段落一。
+>> 引用块 段落二 内嵌引用块
 >
-> ### 引用块内的标题
+> ### 引用块 标题
 
 **对应 HTML：**
 
 ```html
 <blockquote>
-  <p>引用块段落一。</p>
-  <p>引用块段落二。</p>
+  <p>引用块 段落一</p>
+  <p>引用块 段落二</p>
   <blockquote>
-    <p>内嵌引用块段落一。</p>
+    <p>引用块 段落二 内嵌引用块</p>
   </blockquote>
-  <h3 id="引用块内的标题">引用块内的标题</h3>
+  <h3 id="引用块 标题">引用块 标题</h3>
 </blockquote>
 ```
 
@@ -243,141 +241,148 @@ Setext-style 一级标题
 
 Markdown 支持行内式链接和引用式链接。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
+行内式 [GitHub](https://github.com/filehole) 链接。
 
-行内式 [GitHub](https://github.com/mzlogin) 链接。
+行内式 带 title，[博客](https://filehole.github.io "文件洞的个人博客") 链接。
 
 引用式 [博客][1] 链接。
 
-引用式 [GitHub][2] 链接，带 title。
+引用式 带 title，[GitHub][2] 链接。
 
-[1]: https://mazhuang.org
-[2]: https://github.com/mzlogin "我的 GitHub 主页"
+[1]: https://filehole.github.io
+[2]: https://github.com/filehole "我的 GitHub 主页"
 ```
 
 **预览效果：**
 
-行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
+行内式 [GitHub](https://github.com/filehole) 链接。
 
-行内式 [GitHub](https://github.com/mzlogin) 链接。
+行内式 带 title，[博客](https://filehole.github.io "文件洞的个人博客") 链接。
 
 引用式 [博客][1] 链接。
 
-引用式 [GitHub][2] 链接，带 title。
+引用式 带 title，[GitHub][2] 链接。
 
-[1]: https://mazhuang.org
-[2]: https://github.com/mzlogin "我的 GitHub 主页"
+[1]: https://filehole.github.io
+[2]: https://github.com/filehole "我的 GitHub 主页"
 
 **对应 HTML：**
 
 ```html
-<p>行内式 <a href="https://mazhuang.org" title="我的个人博客">博客</a> 链接，带 title。</p>
+<p>行内式 <a href="https://github.com/filehole">GitHub</a> 链接。</p>
 
-<p>行内式 <a href="https://github.com/mzlogin">GitHub</a> 链接。</p>
+<p>行内式 带 title，<a href="https://filehole.github.io" title="文件洞的个人博客">博客</a> 链接。</p>
 
-<p>引用式 <a href="https://mazhuang.org">博客</a> 链接。</p>
+<p>引用式 <a href="https://filehole.github.io">博客</a> 链接。</p>
 
-<p>引用式 <a href="https://github.com/mzlogin" title="我的 GitHub 主页">GitHub</a> 链接，带 title。</p>
+<p>引用式 带 title，<a href="https://github.com/filehole" title="我的 GitHub 主页">GitHub</a> 链接。</p>
 ```
 
 ### 图片
 
 在超链接的写法前加一个 `!`，就是引用图片的方法。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-![Alt text](https://mazhuang.org/favicon.ico "favicon")
+![Alt text](https://filehole.github.io/favicon.ico "favicon")
 ```
 
 **预览效果：**
 
-![Alt text](https://mazhuang.org/favicon.ico "favicon")
+![Alt text](https://filehole.github.io/favicon.ico "favicon")
 
 **对应 HTML：**
 
 ```html
-<img src="https://mazhuang.org/favicon.ico" alt="Alt text" title="favicon">
+<img src="https://filehole.github.io/favicon.ico" alt="Alt text" title="favicon">
 ```
 
 ### 列表
 
 包括有序列表和无序列表。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-- 苹果
-- 葡萄
-- 榴莲
+- 秦朝
+- 汉朝
+- 唐朝
 
-1. 苹果
-2. 葡萄
-3. 榴莲
+1. 秦朝
+2. 汉朝
+3. 唐朝
 ```
 
 **预览效果：**
 
-- 苹果
-- 葡萄
-- 榴莲
+- 秦朝
+- 汉朝
+- 唐朝
 
-1. 苹果
-2. 葡萄
-3. 榴莲
+1. 秦朝
+2. 汉朝
+3. 唐朝
 
 **对应 HTML：**
 
 ```html
 <ul>
-  <li>苹果</li>
-  <li>葡萄</li>
-  <li>榴莲</li>
+  <li>秦朝</li>
+  <li>汉朝</li>
+  <li>唐朝</li>
 </ul>
 <ol>
-  <li>苹果</li>
-  <li>葡萄</li>
-  <li>榴莲</li>
+  <li>秦朝</li>
+  <li>汉朝</li>
+  <li>唐朝</li>
 </ol>
 ```
 
-其中无序列表的标记可以使用 `+`、`-` 或 `*`，有序列表前的数字可以是乱序的。
+无序列表的标记可以使用 `+`、`-` 或 `*`，有序列表前的数字可以是乱序的。
 
 ### 代码块
 
 支持行内代码和代码块。
 
-**Markdown：**
+**Markdown 语法：**
 
-    Android 里使用 `TextUtils` 类的 `isEmpty` 方法来判断字符串是否为空。
+Python 里使用 `requests` 包的 `requests.get()` 方法来获取返回数据。
 
-    ```java
-    if (TextUtils.isEmpty(text)) {
-        return null;
-    }
-    ```
+```python
+import requests
+from bs4 import BeautifulSoup
+html = requests.get(current_url)
+soup = BeautifulSoup(html.text, 'html.parser')
+```
 
 **预览效果：**
 
-Android 里使用 `TextUtils` 类的 `isEmpty` 方法来判断字符串是否为空。
+Python 里使用 `requests` 包的 `requests.get()` 方法来获取返回数据。
 
-```java
-if (TextUtils.isEmpty(text)) {
-    return null;
-}
+```python
+import requests
+from bs4 import BeautifulSoup
+html = requests.get(current_url)
+soup = BeautifulSoup(html.text, 'html.parser')
 ```
 
 **对应 HTML：**
 
 ```html
-<p>Android 里使用 <code>TextUtils</code> 类的 <code>isEmpty</code> 方法来判断字符串是否为空。</p>
+<p>Python 里使用 <code>requests</code> 包的 <code>requests.get()</code> 方法来获取返回数据。</p>
 
-<div class="highlight highlight-source-java"><pre><span class="pl-k">if</span> (<span class="pl-smi">TextUtils</span><span class="pl-k">.</span>isEmpty(text)) {
-    <span class="pl-k">return</span> <span class="pl-c1">null</span>;
-}</pre></div>
+<div class="highlight highlight-source-python">
+  <pre>
+    <span class="pl-k">import</span> 
+    (<span class="pl-smi">TextUtils</span>
+    <span class="pl-k">.</span>isEmpty(text)) {
+    <span class="pl-k">return</span> <span class="pl-c1">null</span>;}
+  </pre>
+</div>
 ```
 
 上例中的语言标记 `java` 可选填，可用于在编辑器和渲染后的效果里添加语法高亮。
