@@ -531,61 +531,67 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 
 ### 删除线
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-后面三个字打上~~删除线~~。
+添加~~删除线~~。
 ```
 
 **预览效果：**
 
-后面三个字打上~~删除线~~。
+添加~~删除线~~。
 
 **对应 HTML：**
 
 ```html
-<p>后面三个字打上<del>删除线</del>。</p>
+<p>添加<del>删除线</del>。</p>
 ```
 
 ### 自动链接
 
-自动链接扩展，即：当识别到 URL，或用 `<`、`>` 包括的 URL 时，会自动为其生成 `a` 标签。
+自动链接扩展，当识别到 URL，或用 `<`、`>` 包括的 URL 时，会自动为其生成 `a` 标签。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-https://github.com
+https://github.com/filehole
 
-<example@gmail.com>
+<yany3385@gmail.com>
 ```
 
 **预览效果：**
 
-https://github.com
+https://github.com/filehole
 
-<example@gmail.com>
+<yany3385@gmail.com>
 
 **对应 HTML：**
 
 ```html
-<p><a href="https://github.com">https://github.com</a></p>
+<p><a href="https://github.com/filehole">https://github.com/filehole</a></p>
 
-<p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+<p><a href="yany3385@gmail.com">yany3385@gmail.com</a></p>
 ```
 
-### emoji
+### emoji 表情
 
 以 GitHub Pages 为例。
 
-**Markdown：**
+**Markdown 语法：**
 
 ```
-:camel: :blush: :smile:
+:camel:
+:blush:
+:smile:
 ```
 
 **预览效果：**
 
-:camel: :blush: :smile:
+:camel:
+
+:blush:
+
+:smile:
 
 **对应 HTML：**
 
@@ -597,64 +603,14 @@ https://github.com
 </p>
 ```
 
-## 奇技淫巧
-
-脑洞清奇的工程师们还发掘了很多使用 Markdown 的方法，大部分都是引入第三方 JavaScript 插件来实现。对这部分我只做简述，对其中的部分功能比如作图等，还是推荐用专门的可视化工具去做。
-
-### 画流程图和时序图
-
-有部分网站和编辑器实现了对 Markdown 里流程图和时序图的支持，比如我们使用的项目管理工具 TAPD 的在线编辑器，还有 VSCode + 插件 Markdown Preview Enhanced 等。
-
-以我们使用的项目管理工具 TAPD 的在线编辑器为例：
-
-![流程图](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-flowchart.png)
-
-![时序图](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-seq.png)
-
-### 插入数学公式
-
-仍然以 TAPD 为例：
-
-![数学公式](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-math.png)
-
-应该是利用 JavaScript 支持了 LaTeX 公式语法。
-
-### 用 Markdown 做 PPT
-
-有专门的工具 [Marp](https://github.com/yhatt/marp)，另外使用 VSCode + 插件 Markdown Preview Enhanced 也可以实现。
-
-### 用 Markdown 写微信公众号
-
-可以将公众号素材用 Markdown 编辑好后，贴到在线排版工具以后，复制到公众号编辑器里即可。有多种页面主题和代码主题可选择。
-
-我维护的工具地址：<https://md.mazhuang.org>
-
-![微信公众号](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/wechat-markdown.png)
-
 ### 更多
 
-想象力丰富的工程师们还扩展了很多基于 Markdown 的玩法，包括但不限于：
+程序员就是会一个点上无线扩展下去，你还可以利用 Markdown 更多的特性：
 
 * 自动生成 / 更新 Table of Contents
 * 流程图 / 时序图
 * 制作幻灯片
-* 集成 PlantUML / GraphViz 的能力
+* 插入数学公式
 * 导出 HTML / PDF / 电子书
+* 写微信公众号
 * ...
-
-以上功能基本都可以用 VSCode + 插件 Markdown Preview Enhanced 实现。
-
-另外可以参考我以前的一篇博客 [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)。
-
-## 参考
-
-* [Markdown: Syntax - DARING FIREBALL](https://daringfireball.net/projects/markdown/syntax)
-* [Markdown - 维基百科](https://zh.wikipedia.org/wiki/Markdown)
-* [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
-* [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)
-
----
-
-欢迎关注我的微信公众号，接收 markdown-intro 最新动态。
-
-<div align="center"><img width="192px" height="192px" src="https://mazhuang.org/assets/images/qrcode.jpg"/></div>
