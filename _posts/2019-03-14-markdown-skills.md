@@ -17,6 +17,11 @@ keywords: Markdown, 高阶
 >
 > 还以为那是生命中普通的一天
 
+**目录**
+
+* TOC
+{:toc}
+
 ## 在表格单元格里换行
 
 借助于 HTML 里的 `<br />` 实现。
@@ -108,7 +113,7 @@ keywords: Markdown, 高阶
 
 **修改后效果：**
 
-<div align="center"><img width="192" height="256" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/></div>
+<div align="center"><img width="256" height="192" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/></div>
 ```
 
 **预览效果：**
@@ -119,38 +124,7 @@ keywords: Markdown, 高阶
 
 **修改后效果：**
 
-<div align="center"><img width="192" height="256" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/></div>
-
-## 格式化表格
-
-虽然 Markdown 的表格在渲染之后很整齐，但是在文件源码里你读到却可能是这样的：
-
-```
-| 级别  | 姓名 | 组织 | 技能 |
-| :----- | :-----  | :----- | :----- |
-| 上忍     | 旗木卡卡西       | 火之国木叶         | 雷切         |
-| 影     | 宇智波鼬       | 晓         | 天照         |
-| 影     | 大蛇丸       | 音忍村         | 禁术·秽土转生         |
-| 下忍     | 漩涡鸣人       | 火之国木叶         | 多重影分身         |
-```
-
-相信很多人都是不能忍的。
-
-好在我们程序员是战无不胜的，在各种编辑器里都为 Markdown 提供了表格格式化功能：
-* Vim 编辑器，[vim-table-mode](https://github.com/dhruvasagar/vim-table-mode)
-* Atom 编辑器，[markdown-table-formatter](https://atom.io/packages/markdown-table-formatter)
-* Sublime Text 3，[MarkdownTableFormatter](https://github.com/bitwiser73/MarkdownTableFormatter)
-
-格式化后就像这样
-
-```
-| 级别   | 姓名       | 组织       | 技能          |
-| :----- | :-----     | :-----     | :-----        |
-| 上忍   | 旗木卡卡西 | 火之国木叶 | 雷切          |
-| 影     | 宇智波鼬   | 晓         | 天照          |
-| 影     | 大蛇丸     | 音忍村     | 禁术·秽土转生 |
-| 下忍   | 漩涡鸣人   | 火之国木叶 | 多重影分身    |
-``` 
+<div align="center"><img width="256" height="192" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/></div>
 
 ## 行首缩进
 
