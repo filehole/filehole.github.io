@@ -1,22 +1,27 @@
 ---
 layout: post
-title: 关于 Markdown 的一些奇技淫巧
+title: Markdown 的不定期更新
 categories: Markdown
-description: 介绍 Markdown 的一些高级用法。
-keywords: Markdown, 奇技淫巧
+description: 介绍 Markdown 的一些高级用法或好玩的特性。
+keywords: Markdown, 高阶
 ---
 
-自从几年前开始在 GitHub 玩耍，接触到 Markdown 之后，就一发不可收拾，在各种文档编辑上，有条件用 Markdown 的尽量用，不能用的创造条件也要用——README、博客、公众号、接口文档等等全都是，比如当前这篇文章就是用 Markdown 编辑而成。
+本文将会介绍一些 Markdown 的扩展语法，或者好玩的特性，希望大家也都能在自己写博客中寻找到只属于自己的快乐。
+很多技巧是基于 GitHub 来利用兼容 HTML 的特性来实现。
 
-这几年也发现越来越多的网站和程序提供了对 Markdown 的支持，从最初接触的 GitHub、Jekyll，到简书、掘金、CSDN 等等，由此也从别人做得好的文档中，学到了一些『奇技淫巧』，所以本文不是对 Markdown 基础语法的介绍，而是一些相对高级、能将 Markdown 玩出更多花样的小技巧。
-
-*注：如下技巧大多是利用 Markdown 兼容部分 HTML 标签的特性来完成，不一定在所有网站和软件里都完全支持，主要以 GitHub 支持为准。*
+> 当你老了
+>
+> 回顾一生
+>
+> 眼见风云千樯
+>
+> 还以为那是生命中普通的一天
 
 ## 在表格单元格里换行
 
 借助于 HTML 里的 `<br />` 实现。
 
-示例代码：
+**Markdown 代码：**
 
 ```
 | Header1 | Header2                          |
@@ -24,7 +29,7 @@ keywords: Markdown, 奇技淫巧
 | item 1  | 1. one<br />2. two<br />3. three |
 ```
 
-示例效果：
+**预览效果：**
 
 | Header1 | Header2                          |
 |---------|----------------------------------|
@@ -34,66 +39,79 @@ keywords: Markdown, 奇技淫巧
 
 使用 `<img>` 标签来贴图，然后指定 `align` 属性。
 
-示例代码：
+**Markdown 代码：**：
 
 ```
-<img align="right" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/>
+<img align="right" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/>
 
-这是一个示例图片。
+这是一个胖丁的图片。
 
-图片显示在 N 段文字的右边。
+图片显示在文字的右边。
 
-N 与图片高度有关。
+> 姓名：胖丁
+>
+> 外貌：胖丁是圆形的粉色球状神奇宝贝，有小的猫耳和大眼睛。
+>
+> HP：115
+>
+> 攻击：45
+>
+> 防御：20
+>
+> 速度：20
 
-刷屏行。
-
-刷屏行。
-
-到这里应该不会受影响了，本行应该延伸到了图片的正下方，所以我要足够长才能确保不同的屏幕下都看到效果。
+本行延伸到了图片的正下方，所以这个时候就可以看到这段话延伸在图片的下方的效果了。
 ```
-示例效果：
 
-<img align="right" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/>
+**预览效果：**
 
-这是一个示例图片。
+<img align="right" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/>
 
-图片显示在 N 段文字的右边。
+这是一个胖丁的图片。
 
-N 与图片高度有关。
+图片显示在文字的右边。
 
-刷屏行。
+> 姓名：胖丁
+>
+> 外貌：胖丁是圆形的粉色球状神奇宝贝，有小的猫耳和大眼睛。
+>
+> HP：115
+>
+> 攻击：45
+>
+> 防御：20
+>
+> 速度：20
 
-刷屏行。
-
-到这里应该不会受影响了，本行应该延伸到了图片的正下方，所以我要足够长才能确保不同的屏幕下都看到效果。
+本行延伸到了图片的正下方，所以这个时候就可以看到这段话延伸在图片的下方的效果了。
 
 ## 控制图片大小和位置
 
-标准的 Markdown 图片标记 `![]()` 无法指定图片的大小和位置，只能依赖默认的图片大小，默认居左。
+标准的 Markdown 图片标记 `![]()` 无法指定图片的大小和位置，只能默认的图片大小，居左。
 
-而有时候源图太大想要缩小一点，或者想将图片居中，就仍需要借助 HTML 的标签来实现了。图片居中可以使用 `<div>` 标签加 `align` 属性来控制，图片宽高则用 `width` 和 `height` 来控制。
+但如果什么都不能控制，还怎么满足程序员的控制欲呢，图片居中可以使用 `<div>` 标签加 `align` 属性来控制，图片宽高则用 `width` 和 `height` 来控制。
 
-示例代码：
+**Markdown 代码：**：
 
 ```
-**图片默认显示效果：**
+**图片默认效果：**
 
-![](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png)
+![pangding](https://filehole.github.io/images/posts/markdown/pangding-img.png)
 
-**加以控制后的效果：**
+**修改后效果：**
 
-<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+<div align="center"><img width="65" height="75" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/></div>
 ```
 
-示例效果：
+**预览效果：**
 
-**图片默认显示效果：**
+**图片默认效果：**
 
-![](https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png)
+![pangding](https://filehole.github.io/images/posts/markdown/pangding-img.png)
 
-**加以控制后的效果：**
+**修改后效果：**
 
-<div align="center"><img width="65" height="75" src="https://raw.githubusercontent.com/mzlogin/mzlogin.github.io/master/images/posts/markdown/demo.png"/></div>
+<div align="center"><img width="65" height="75" src="https://filehole.github.io/images/posts/markdown/pangding-img.png"/></div>
 
 ## 格式化表格
 
