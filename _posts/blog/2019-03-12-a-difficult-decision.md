@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 我做了一个有点艰难的决定
+title: 一个艰难的决定
 categories: Blog
-description: 我北漂之旅的终点，人生的新起点。
+description: 换一个角度，我的人生还可以更精彩。
 keywords: 北漂
 ---
 
