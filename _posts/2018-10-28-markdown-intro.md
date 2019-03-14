@@ -576,9 +576,9 @@ https://github.com/filehole
 <p><a href="yany3385@gmail.com">yany3385@gmail.com</a></p>
 ```
 
-### emoji 表情
+### Emoji 表情
 
-以 GitHub Pages 为例。
+Emoji 用得好能让文字更生动，表情可参考 <https://www.webpagefx.com/tools/emoji-cheat-sheet/>。
 
 **Markdown 语法：**
 
