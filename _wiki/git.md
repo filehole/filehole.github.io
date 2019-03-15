@@ -8,29 +8,51 @@ keywords: Git, 版本控制
 
 ## 常用命令
 
-| 功能                      | 命令                                  |
-|:--------------------------|:--------------------------------------|
-| 添加文件/更改到暂存区     | git add filename                      |
-| 添加所有文件/更改到暂存区 | git add .                             |
-| 提交                      | git commit -m msg                     |
-| 从远程仓库拉取最新代码    | git pull origin master                |
-| 推送到远程仓库            | git push origin master                |
-| 查看配置信息              | git config --list                     |
-| 查看文件列表              | git ls-files                          |
-| 比较工作区和暂存区        | git diff                              |
-| 比较暂存区和版本库        | git diff --cached                     |
-| 比较工作区和版本库        | git diff HEAD                         |
-| 从暂存区移除文件          | git reset HEAD filename               |
-| 查看本地远程仓库配置      | git remote -v                         |
-| 回滚                      | git reset --hard 提交SHA              |
-| 强制推送到远程仓库        | git push -f origin master             |
-| 修改上次 commit           | git commit --amend                    |
-| 推送 tags 到远程仓库      | git push --tags                       |
-| 推送单个 tag 到远程仓库   | git push origin [tagname]             |
-| 删除远程分支              | git push origin --delete [branchName] |
-| 远程空分支（等同于删除）  | git push origin :[branchName]         |
-| 查看所有分支历史          | gitk --all                            |
-| 按日期排序显示历史        | gitk --date-order                     |
+|类型  | 功能                         | 命令                                        |
+|:-----|:-----------------------------|:--------------------------------------------|
+|基础  | 查看状态                     | git status                                  |
+|基础  | 查看分支                     | git branch -[v/vv]                          |
+|基础  | 创建分支                     | git branch banchname                        |
+|基础  | 切换分支                     | git checkout branchname                     |
+|基础  | 添加文件/更改到暂存区        | git add filename                            |
+|基础  | 添加所有文件/更改到暂存区    | git add .                                   |
+|基础  | 提交修改                     | git commit -m 'msg'                         |
+|基础  | 修改上次 commit              | git commit --amend                          |
+|基础  | 查看配置信息                 | git config --list                           |
+|缓存  | 暂存当前修改                 | git stash                                   |
+|缓存  | 读取上次暂存                 | git pop                                     |
+|比较  | 比较工作区和暂存区           | git diff                                    |
+|比较  | 比较暂存区和版本库           | git diff --cached                           |
+|比较  | 比较工作区和版本库           | git diff HEAD                               |
+|修改  | 从暂存区移除文件             | git reset HEAD filename                     |
+|修改  | 撤销已修改的文件             | git checkout -- filename                    |
+|修改  | 移除并删除文件               | git rm [-f] filename                        |
+|修改  | 移除但不删除                 | git rm --cached filename                    |
+|修改  | 修改名称                     | git mv filename-old filename-new            |
+|日志  | 查看提交日志                 | git log                                     |
+|日志  | 定制日志格式                 | git log --pretty=format:"%h - %an, %ar : %s"|
+|分支  | 新建分支并切换到该分支       | git checkout -b banchname                   |
+|分支  | 删除分支                     | git branch -d/-D banchname                  |
+|分支  | 当前分支上合并 brnachname    | git merge banchname                         |
+|分支  | 取出特性分支在 master 上重演 | git rebase [主分支] [特性分支]              |
+|分支  | 从远程拉取最新代码           | git pull origin [远程分支]                  |
+|分支  | 推送本地分支到远程           | git push origin localbranch:remotebranch    |
+|分支  | 删除指定的远程分支           | git push origin :remotebranch               |
+|分支  | 强制 push                    | git push origin +master:master              |
+|仓库  | 查看远程仓库                 | git remote [-v]                             |
+|仓库  | 添加远程仓库                 | git remote add [shortname] [url]            |
+|仓库  | 从远程仓库抓取数据           | git fetch [-p] [remotename]                 |
+|仓库  | 移除本地远程仓库             | git remote rm remotename                    |
+|标签  | 列出所有标签                 | git tag                                     |
+|标签  | 推送 tags 到远程仓库         | git push --tags                             |
+|标签  | 打标签                       | git tag -a v1.0 -m 'msg'                    |
+
+
+
+
+修改 .gitignore 文件 忽略已跟踪的文件或目录
+
+
 
 ## Q&A
 
