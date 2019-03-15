@@ -30,7 +30,11 @@ Fork 本项目可以轻松地建立你自己的 git blog，当然还需要做一
 
 2. 修改域名。
 
-   如果你需要绑定自己的其他域名，那么可以在根目录下建立 CNAME 文件，写入相应的域名；如果后续不再需要绑定自己的域名，那么删掉 CNAME 文件即可。
+   首先当然先需要购买自己的域名，然后获取对应的 `ip` 地址 `ping username.github.io`。然后在根目录下建立 CNAME 文件，写入相应的域名；如果后续不再需要绑定自己的域名，那么删掉 CNAME 文件即可。
+
+   同时需要在相应的域名管理中添加好对应的 `DNS` 解析规则。
+
+   ![DNS](https://filehole.github.io/assets/images/readme/dns.png)
 
 3. 修改配置。
 
