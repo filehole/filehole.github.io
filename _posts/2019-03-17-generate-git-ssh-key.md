@@ -26,7 +26,7 @@ ls -al ~/.ssh
 * id_ed25519.pub
 * id_rsa.pub
 
-## Step2: 生成新的 SSH Key
+## Step2：生成新的 SSH Key
 
 复制下面的命令，并替换其中的 `email` 为自己的账户，其他的可以用默认设置，不断点击 `Enter` 即可。
 
