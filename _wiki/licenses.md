@@ -12,7 +12,7 @@ keywords: 注册码, 仅个人学习使用
 
 ## Sublime Text
 
-Sublime Text 2 的注册码
+Sublime Text 2 注册码
 
 > 
 > ----- BEGIN LICENSE -----
@@ -40,4 +40,21 @@ Sublime Text 2 的注册码
 > B98FC99C 8FAC73EE D2B95564 DF450523
 > 
 > ------ END LICENSE ------
+> 
+
+## Beyond Compare
+
+Beyond Compare 4 注册码
+
+> H1bJTd2SauPv5Garuaq0Ig43uqq5NJOEw94wxdZTpU-pFB9GmyPk677gJ
+> 
+> vC1Ro6sbAvKR4pVwtxdCfuoZDb6hJ5bVQKqlfihJfSYZt-xVrVU27+0Ja
+> 
+> hFbqTmYskatMTgPyjvv99CF2Te8ec+Ys2SPxyZAF0YwOCNOWmsyqN5y9t
+> 
+> q2Kw2pjoiDs5gIH-uw5U49JzOB6otS7kThBJE-H9A76u4uUvR8DKb+VcB
+> 
+> rWu5qSJGEnbsXNfJdq5L2D8QgRdV-sXHp2A-7j1X2n4WIISvU1V9koIyS
+> 
+> NisHFBTcWJS0sC5BTFwrtfLEE9lEwz2bxHQpWJiu12ZeKpi+7oUSqebX+
 > 
