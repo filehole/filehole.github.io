@@ -10,6 +10,10 @@ keywords: Linux
 
 ## 实用命令
 
+### id
+
+查看当前用户、组 id。
+
 ### fuser
 
 查看文件被谁占用。
@@ -17,10 +21,6 @@ keywords: Linux
 ```sh
 fuser -u .linux.md.swp
 ```
-
-### id
-
-查看当前用户、组 id。
 
 ### lsof
 
