@@ -62,13 +62,3 @@ Eva 同学终于升职了，相比我的经历，Eva 终于在 2019 年有了管
 ## 前天是小兔子，昨天是小鹿，今天是你
 
 ![peace](https://filehole.github.io/images/blog/2019-03-14-peace.jpg)
-
-<div  align="center">
-	![peace](https://filehole.github.io/images/blog/2019-03-14-peace.jpg)
-</div>
-
-<div style="align: center">
-	<img src="https://filehole.github.io/images/blog/2019-03-14-peace.jpg"/>
-</div>
-
-<img src="https://filehole.github.io/images/blog/2019-03-14-peace.jpg" alt="peace" align=center />
