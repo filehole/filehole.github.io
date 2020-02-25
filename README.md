@@ -18,6 +18,9 @@
 
 **[在线预览 &rarr;](https://filehole.github.io)**
 
+```
+未绑定host导致图片无法显示的可以直接访问地址：https://filehole.github.io/assets/images/screenshots/home.png
+```
 ![screenshot home](https://filehole.github.io/assets/images/screenshots/home.png)
 
 ## Fork 指南
@@ -34,6 +37,9 @@ Fork 本项目可以轻松地建立你自己的 git blog，当然还需要做一
 
    同时需要在相应的域名管理中添加好对应的 `DNS` 解析规则。
 
+   ```
+   未绑定host导致图片无法显示的可以直接访问地址：https://filehole.github.io/assets/images/readme/dns.png
+   ```
    ![DNS](https://filehole.github.io/assets/images/readme/dns.png)
 
 3. 修改配置。
@@ -44,6 +50,9 @@ Fork 本项目可以轻松地建立你自己的 git blog，当然还需要做一
 
    *gitalk* 创建流程
    >- 进入 Settings -> Developer settings -> OAuth Apps
+   ```
+   未绑定host导致图片无法显示的可以直接访问地址：https://filehole.github.io/assets/images/readme/create-new-OAuth-App.png
+   ```
    >- 创建新的应用 New OAuth App ![New OAuth App](https://filehole.github.io/assets/images/readme/create-new-OAuth-App.png)
    >- 获取创建好的应用的参数，最重要的即 Client ID 与 Client Secret
    >- 在 github 中创建留存对应评论的仓库，例如 blog-comments
