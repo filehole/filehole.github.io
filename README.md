@@ -19,7 +19,6 @@
 **[在线预览 &rarr;](https://filehole.github.io)**
 
 ![screenshot home](https://filehole.github.io/assets/images/screenshots/home.png)
-![peace](https://filehole.github.io/images/blog/2019-03-14-peace.jpg)
 
 ## Fork 指南
 
