@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2019-Q2 个人 OKR 实施方案
+title: 2020-03 个人 OKR 实施方案
 categories: Goal
 description: 尝试用 OKR 的方式管理自己的生活与学习
 keywords: OKR, 个人提高
